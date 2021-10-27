@@ -90,12 +90,40 @@ let result = 'the blog has' + likes + 'likes';
 console.log(result);  */
 
 //template strings
-const title = 'Best read of 2019';
+/* const title = 'Best read of 2019';
 const author = 'Mario';
 const likes = 30;
 
 //concatention way
-
+let result = 'the blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
 //template string way
-
+let result = 'the blog called ${title} by ${author} has ${title} like';
+console.log(result);
 //creating html template
+let html = '
+<h2>${title}</h2>
+<p>${author}</p>
+<span>This blog has ${title} likes</span>
+';
+
+console.log(html); */
+
+let ninjas = ['shaun', 'ryu', 'chun-li'];
+ninjas[1] = 'ken';
+console.log(ninjas[1]);
+
+let ages = [20, 25, 30, 35];
+console.log(ages[2]);
+
+let random = ['shaun', 'crystal', 30, 20];
+console.log(random);
+
+//array methods
+let result = ninjas.join('-');
+let result = ninjas.indexOf('chun-li');
+let result = ninjas.concat(['ken' + 'crystal']);
+let result = ninjas.push('ken');
+
+
+console.log(result);
+
